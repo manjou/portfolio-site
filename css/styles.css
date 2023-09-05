@@ -86,6 +86,7 @@ hr {
     display: flex;
     width: 100%;
     padding: 10px 10px 5px 10px;
+    align-items: center;
 }
 
 .page-header__item {
@@ -303,15 +304,15 @@ a.button {
 /* form styling */
 
 .contact-form {
-    width: 50vh;
-    margin-bottom: 10px;
-    padding: 10px;
-    background-color: var(--background-color-lightgrey); 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    /* background-color: var(--background-color-lightgrey);  */
 }
 #contact-info {
     width: 50vh;
     padding: 10px;
-    background-color: var(--background-color-lightgrey); 
+    /* background-color: var(--background-color-lightgrey);  */
 }
 
 #contact-info a {
@@ -321,12 +322,13 @@ a.button {
 .form_field {
     display: block;
     padding: 5px;
-    background-color: var(--background-color-lightgrey);
+    /* background-color: var(--background-color-lightgrey); */
 }
-.form_field input 
+.form_field input, 
 .form_field textarea {
     width: 100%;
     margin-top: 10px;
+    padding: 5px 10px;
 }
 /* end of form styling */
 
