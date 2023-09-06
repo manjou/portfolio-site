@@ -319,12 +319,20 @@ a.button {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;
+<<<<<<< HEAD
     margin-bottom: 10px;
     padding: 10px; 
+=======
+    /* background-color: var(--background-color-lightgrey);  */
+>>>>>>> 50110b8069259d303d22f30b785f96064e05b8e2
 }
 #contact-info {
     width: 50vh;
     padding: 10px;
+<<<<<<< HEAD
+=======
+    /* background-color: var(--background-color-lightgrey);  */
+>>>>>>> 50110b8069259d303d22f30b785f96064e05b8e2
 }
 
 #contact-info a {
@@ -334,8 +342,14 @@ a.button {
 .form_field {
     display: block;
     padding: 5px;
+<<<<<<< HEAD
 }
 .form_field input,
+=======
+    /* background-color: var(--background-color-lightgrey); */
+}
+.form_field input, 
+>>>>>>> 50110b8069259d303d22f30b785f96064e05b8e2
 .form_field textarea {
     width: 100%;
     margin-top: 10px;
