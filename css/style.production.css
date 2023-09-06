@@ -5,6 +5,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 :root {
     /* Primary Color (Elephant): #0e4243; */
     /* Secondary Color (Thunderbird): #c93c20; */
@@ -379,20 +386,12 @@ a.button {
     -ms-grid-columns: 1fr 1rem 1fr;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;
-<<<<<<< HEAD
     margin-bottom: 10px;
     padding: 10px; 
-=======
-    /* background-color: var(--background-color-lightgrey);  */
->>>>>>> 50110b8069259d303d22f30b785f96064e05b8e2
 }
 #contact-info {
     width: 50vh;
     padding: 10px;
-<<<<<<< HEAD
-=======
-    /* background-color: var(--background-color-lightgrey);  */
->>>>>>> 50110b8069259d303d22f30b785f96064e05b8e2
 }
 
 #contact-info a {
@@ -402,14 +401,8 @@ a.button {
 .form_field {
     display: block;
     padding: 5px;
-<<<<<<< HEAD
 }
 .form_field input,
-=======
-    /* background-color: var(--background-color-lightgrey); */
-}
-.form_field input, 
->>>>>>> 50110b8069259d303d22f30b785f96064e05b8e2
 .form_field textarea {
     width: 100%;
     margin-top: 10px;
