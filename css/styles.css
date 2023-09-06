@@ -86,6 +86,7 @@ hr {
     display: flex;
     width: 100%;
     padding: 10px 10px 5px 10px;
+    align-items: center;
 }
 
 .page-header__item {
@@ -129,7 +130,8 @@ nav {
 nav img {
     /*background-color: var(--secondary-color); */
     padding: 4px;
-    box-shadow: 5px 5px var(--primary-color);
+    box-shadow: 5px 5px var(--primary-color-lighter);
+
 
 }
 /* end of navigation/header styling */
@@ -138,7 +140,8 @@ nav img {
 /* introduction/profile styling */
 .profile {
     max-width: 700px;
-    margin: 0 auto;
+    margin: 20px auto;
+    padding: 20px;
   }
 
 .profile__portrait {
@@ -186,33 +189,41 @@ nav img {
 }
 .aboutme li:nth-child(1) {
     background-color: var(--background-color-lightgrey);
+    box-shadow: var(--primary-color-lighter) 1px 2px 3px 0px;
 }
 
 .aboutme li:nth-child(3) {
     background-color: var(--background-color-lightgrey);
+    box-shadow: var(--primary-color-lighter) 1px 2px 3px 0px;
 }
 
 .aboutme li:nth-child(6) {
     background-color: var(--background-color-lightgrey);
+    box-shadow: var(--primary-color-lighter) 1px 2px 3px 0px;
 }
 
 .aboutme li:nth-child(8) {
     background-color:var(--background-color-lightgrey);
+    box-shadow: var(--primary-color-lighter) 1px 2px 3px 0px;
 }
 
 .aboutme li:nth-child(10) {
     background-color:var(--background-color-lightgrey);
+    box-shadow: var(--primary-color-lighter) 1px 2px 3px 0px;
 }
 
 .aboutme li:nth-child(12) {
     background-color: var(--background-color-lightgrey);
+    box-shadow: var(--primary-color-lighter) 1px 2px 3px 0px;
 }
 
 .aboutme li:nth-child(15) {
     background-color: var(--background-color-lightgrey);
+    box-shadow: var(--primary-color-lighter) 1px 2px 3px 0px;
 }
 .aboutme li:nth-child(13) {
     background-color: var(--background-color-lightgrey);
+    box-shadow: var(--primary-color-lighter) 1px 2px 3px 0px;
 }
 /* end of About me section  */
 
@@ -229,6 +240,7 @@ nav img {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     grid-gap: 2rem;
+    box-shadow: var(--primary-color-lighter) 1px 2px 3px 0px;
 }
 .skill-img {
     background-color: white;
@@ -268,6 +280,7 @@ button, .button, .button-contact-me {
     padding: 10px 20px;
     border-bottom: 2px solid rgba(0, 0, 0, 0.3);
     border-radius: 4px;
+    box-shadow: var(--primary-color-lighter) 1px 2px 3px 0px;
   }
 
 button:hover, .button:hover {
@@ -303,15 +316,15 @@ a.button {
 /* form styling */
 
 .contact-form {
-    width: 50vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
     margin-bottom: 10px;
-    padding: 10px;
-    background-color: var(--background-color-lightgrey); 
+    padding: 10px; 
 }
 #contact-info {
     width: 50vh;
     padding: 10px;
-    background-color: var(--background-color-lightgrey); 
 }
 
 #contact-info a {
@@ -321,12 +334,12 @@ a.button {
 .form_field {
     display: block;
     padding: 5px;
-    background-color: var(--background-color-lightgrey);
 }
-.form_field input 
+.form_field input,
 .form_field textarea {
     width: 100%;
     margin-top: 10px;
+    padding: 5px 10px;
 }
 /* end of form styling */
 
@@ -371,13 +384,22 @@ footer {
     }
     
     .project-list__item {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
         background-color: var(--background-color-lightgrey);
         width: auto;
         min-height: auto;
         margin: 0;
         padding: 20px;
+        box-shadow: var(--primary-color-lighter) 1px 2px 3px 0px;
     }
     
+    .techstack {
+        color: var(--secondary-color);
+        background-color: var(--background-color);
+        line-height: 1.9;
+    }
     .project-list__item:last-child {
         grid-column: 3 / 3;
         grid-row: 1 / 3;
