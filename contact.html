@@ -19,7 +19,7 @@
     <body>
         <hr>
         <header class="page-header">
-            <img src="img/bernd-janzen-logo.svg" class="page-header__item" height="70px" alt="Logo in capital lettres Bernd Janzen">
+            <img src="img/bernd-janzen-logo.svg" class="page-header__item" height="70" alt="Logo in capital lettres Bernd Janzen">
             <nav class="main-navigation page-header__item">
                 <ul role="menubar" class="navigation-list">
                    <li role="presentation">
@@ -41,7 +41,7 @@
         <main>
             <h1>Contact</h1>
             <div class="contact-form">
-                <form action="" method="post" id="contact-form">
+                <form action="#" method="post" id="contact-form">
                     <div class="form_field">
                         <label for="contact-email" class="standard-label">Email: </label><br>
                         <input type="email" id="contact-email" name="contact-email" required>
@@ -52,7 +52,7 @@
                     </div>
                     <div class="form_field">
                         <label for="message" class="standard-label">Message: </label><br>
-                        <textarea name="message" id="message" cols="30" rows="10"  maxlenght="240" required placeholder="max. 240 characters"></textarea>
+                        <textarea maxlength="240" name="message" id="message" cols="30" rows="10" required placeholder="max. 240 characters"></textarea>
                     </div>
                     <div>
                         <!-- <button class="button" type="reset">Reset</button> -->
@@ -60,7 +60,7 @@
                     </div>
                 </form>
     
-                <div id="contact-info">
+                <div class="contact-info">
                     <h2>Bernd Manjou Janzen</h2>
                     <br>
                     <h3>Berlin, Germany</h3>
@@ -69,9 +69,9 @@
                     <br> -->
                     <a href="mailto:manju.janzen(at)googlemail(dot)com">Email: manju.janzen@googlemail.com</a>
                     <br><br>
-                    <div>
-                        <button type="button" role="button" class="button-contact-me"><a href="mailto:manju.janzen(at)googlemail(dot)com"></a>Contact me</button>
-                    </div>
+                    
+                    <a href="mailto:manju.janzen(at)googlemail(dot)com" class="button-contact-me">Contact me</a>
+                    
                     
                 </div>
                 
