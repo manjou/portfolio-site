@@ -1,4 +1,4 @@
-<h1>portfolio-site from bernd manjou janzen/h1> 
+<h1>portfolio-site from bernd manjou janzen</h1> 
 
 <p>Hi everyone, i am a web developer from berlin currently studying full stack web development with career foundry. 
 this is my first project, my portfolio web site. <br>
