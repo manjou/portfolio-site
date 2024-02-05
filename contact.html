@@ -1,96 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Bernd Manjou Janzen - Web Development Website provides information about work, content and services provided">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Bernd Manjou Janzen - Web Development Website provides information about work, content and services provided"
+        />
         <title>Bernd Janzen - Web Development</title>
-        <link rel="shortcut icon" href="img/favicon-32x32.png">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
-        <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200;10..48,300;10..48,400;10..48,500;10..48,700;10..48,800&family=Source+Sans+3:wght@200;300;600&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200;10..48,300;10..48,400;10..48,500;10..48,700;10..48,800&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-        <link rel="stylesheet" type="text/css" href="css/style.production.css">
+        <link rel="shortcut icon" href="img/favicon-32x32.png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="css/style.production.css"
+        />
+        <!-- <link rel="stylesheet" type="text/css" href="css/styles.css" /> -->
     </head>
-    
+
     <body>
-        <hr>
+        <hr />
         <header class="page-header">
-            <img src="img/bernd_manjou_janzen_logo.png" class="page-header__item" height="80" alt="Logo in capital lettres Bernd Janzen">
+            <img
+                src="img/bernd_manjou_janzen_logo.png"
+                class="page-header__item"
+                height="80"
+                alt="Logo in capital lettres Bernd Janzen"
+            />
             <nav class="main-navigation page-header__item">
                 <ul role="menubar" class="navigation-list">
-                   <li role="presentation">
-                        <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">HOME</a>
+                    <li role="presentation">
+                        <a
+                            href="index.html"
+                            role="menuitem"
+                            class="navigation-list__item navigation-list__item--active"
+                            >HOME</a
+                        >
                     </li>
                     <li role="presentation">
-                        <a href="about.html" role="menuitem" class="navigation-list__item">ABOUT ME</a>
+                        <a
+                            href="about.html"
+                            role="menuitem"
+                            class="navigation-list__item"
+                            >ABOUT ME</a
+                        >
                     </li>
                     <li role="presentation">
-                        <a href="work.html" role="menuitem" class="navigation-list__item">WORK</a>
+                        <a
+                            href="work.html"
+                            role="menuitem"
+                            class="navigation-list__item"
+                            >PROJECTS</a
+                        >
                     </li>
                     <li role="presentation">
-                        <a href="contact.html" role="menuitem" class="navigation-list__item">CONTACT</a>
+                        <a
+                            href="contact.html"
+                            role="menuitem"
+                            class="navigation-list__item"
+                            >CONTACT</a
+                        >
                     </li>
                 </ul>
-            </nav><!-- end of nav-->
+            </nav>
+            <!-- end of nav-->
         </header>
-        <hr>
+        <hr />
         <main>
-            <h1>Contact</h1>
+            <h2>Contact</h2>
             <div class="contact-form">
                 <form action="#" method="post" id="contact-form">
                     <div class="form_field">
-                        <label for="contact-email" class="standard-label">Email: </label><br>
-                        <input type="email" id="contact-email" name="contact-email" required>
+                        <label for="contact-email" class="standard-label"
+                            >Email: </label
+                        ><br />
+                        <input
+                            type="email"
+                            id="contact-email"
+                            name="contact-email"
+                            required
+                        />
                     </div>
                     <div class="form_field">
-                    <label for="tel" class="standard-label">Telephone: </label><br>
-                    <input type="tel" id="tel" name="tel"> 
+                        <label for="tel" class="standard-label"
+                            >Telephone: </label
+                        ><br />
+                        <input type="tel" id="tel" name="tel" />
                     </div>
                     <div class="form_field">
-                        <label for="message" class="standard-label">Message: </label><br>
-                        <textarea maxlength="240" name="message" id="message" cols="30" rows="10" required placeholder="max. 240 characters"></textarea>
+                        <label for="message" class="standard-label"
+                            >Message: </label
+                        ><br />
+                        <textarea
+                            maxlength="240"
+                            name="message"
+                            id="message"
+                            cols="30"
+                            rows="10"
+                            required
+                            placeholder="max. 240 characters"
+                        ></textarea>
                     </div>
                     <div>
                         <!-- <button class="button" type="reset">Reset</button> -->
                         <button class="button" type="submit">Submit</button>
                     </div>
                 </form>
-    
+
                 <div class="contact-info">
                     <h2>Bernd Manjou Janzen</h2>
-                    <br>
+                    <br />
                     <h3>Berlin, Germany</h3>
-                    <br>
+                    <br />
                     <!-- <a href="tel.:+491799117911">Tel: +49.179.9117911</a>
                     <br> -->
-                    <a href="mailto:manju.janzen(at)googlemail(dot)com">Email: manju.janzen@googlemail.com</a>
-                    <br><br>
-                    
-                    <a href="mailto:manju.janzen(at)googlemail(dot)com" class="button-contact-me">Contact me</a>
-                    
-                    
+                    <a href="mailto:manju.janzen(at)googlemail(dot)com"
+                        >Email: manju.janzen@googlemail.com</a
+                    >
+                    <br /><br />
+
+                    <a
+                        href="mailto:manju.janzen(at)googlemail(dot)com"
+                        class="button-contact-me"
+                        >Contact me</a
+                    >
                 </div>
-                
             </div>
         </main>
-    
+
         <footer class="page-footer">
-            <div>Find me on</div><br>
+            <div>Find me on</div>
+            <br />
             <!-- Github Logo -->
             <div class="social-media">
-                <a href="https://github.com/"><img src="img/github_icon.svg" alt="github icon"></a>
+                <a href="https://github.com/"
+                    ><img src="img/github_icon.svg" alt="github icon"
+                /></a>
                 <!-- Linkedin Logo -->
-                <a href="https://www.linkedin.com/in/bernd-manjou-janzen-870434158/"><img src="img/linkedin_icon.svg" alt="linkedin icon"></a>
+                <a
+                    href="https://www.linkedin.com/in/bernd-manjou-janzen-870434158/"
+                    ><img src="img/linkedin_icon.svg" alt="linkedin icon"
+                /></a>
                 <!-- Twitter Logo -->
-                <a href="#"><img src="img/twitter_icon.svg" alt="twitter icon"></a>
+                <a href="#"
+                    ><img src="img/twitter_icon.svg" alt="twitter icon"
+                /></a>
             </div>
-        </footer><!-- end of footer -->
-        
-        <script src="js/tota11y.min.js"></script>
+        </footer>
+        <!-- end of footer -->
 
+        <script src="js/tota11y.min.js"></script>
     </body>
 </html>

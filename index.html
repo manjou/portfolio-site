@@ -1,82 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+    <link rel="stylesheet" type="text/css" href="css/style.production.css" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bernd Manjou Janzen - Web Development Website provides information about work, content and services provided">
-    <title>Bernd Janzen - Web Development</title>
-    <link rel="shortcut icon" href="img/favicon-32x32.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
-    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200;10..48,300;10..48,400;10..48,500;10..48,700;10..48,800&family=Source+Sans+3:wght@200;300;600&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200;10..48,300;10..48,400;10..48,500;10..48,700;10..48,800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-</head>
+    <body>
+        <!-- <hr /> -->
+        <header class="page-header">
+            <a href="home" class="header__home">berndjanzen</a>
+            <!-- <img
+                src="img/bernd_manjou_janzen_logo.png"
+                class="page-header__item page-header__img"
+                height="80"
+                alt="Logo in capital lettres Bernd Janzen"
+            /> -->
+            <nav class="main-navigation page-header__item">
+                <ul role="menubar" class="navigation-list">
+                    <li role="presentation">
+                        <a
+                            href="index.html"
+                            role="menuitem"
+                            class="navigation-list__item navigation-list__item--active"
+                            >HOME</a
+                        >
+                    </li>
+                    <li role="presentation">
+                        <a
+                            href="about.html"
+                            role="menuitem"
+                            class="navigation-list__item"
+                            >ABOUT ME</a
+                        >
+                    </li>
+                    <li role="presentation">
+                        <a
+                            href="work.html"
+                            role="menuitem"
+                            class="navigation-list__item"
+                            >PROJECTS</a
+                        >
+                    </li>
+                    <li role="presentation">
+                        <a
+                            href="contact.html"
+                            role="menuitem"
+                            class="navigation-list__item"
+                            >CONTACT</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+            <!-- end of nav-->
+        </header>
+        <!-- <hr /> -->
+        <main>
+            <section class="hero">
+                <div class="wrapper">
+                    <article id="backgroundimage">
+                        <!-- <img
+                    src="/img/BackgroundLaptop.png"
+                    alt="a picture of an wooden desktop with an open macbook and a book about javascript"
+                    srcset="
+                        /img/BackgroundLaptop.png 348w,
+                        /img/BackgroundLaptop.png 646w,
+                        /img/BackgroundLaptop.png 890w
+                    "
+                    sizes="(max-width: 599.98px) 42vw, (max-width: 646px) 100vw, 890px"
+                /> -->
+                        <h1>
+                            Nice to meet you!<br />
+                            I'm <span>Bernd Manjou Janzen</span>.
+                        </h1>
+                        <br />
+                        <p class="hero__infotext">
+                            Leveraging over a decade of diverse experiences,
+                            from hospitality and woodworking to electronic music
+                            production, I bring a unique blend of creativity and
+                            technical skills to the world of web development.
+                            Let's connect and explore how my varied background
+                            can contribute to your projects.
+                        </p>
 
-<body>
-    <hr>
-    <header class="page-header">
-        <img src="img/bernd_manjou_janzen_logo.png" class="page-header__item"  height="80" alt="Logo in capital lettres Bernd Janzen">
-        <nav class="main-navigation page-header__item">
-            <ul role="menubar" class="navigation-list">
-               <li role="presentation">
-                    <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">HOME</a>
-                </li>
-                <li role="presentation">
-                    <a href="about.html" role="menuitem" class="navigation-list__item">ABOUT ME</a>
-                </li>
-                <li role="presentation">
-                    <a href="work.html" role="menuitem" class="navigation-list__item">WORK</a>
-                </li>
-                <li role="presentation">
-                    <a href="contact.html" role="menuitem" class="navigation-list__item">CONTACT</a>
-                </li>
-            </ul>
-        </nav><!-- end of nav-->
-    </header>
-    <hr>
-    <main>
-        <article>
-            <img src="img/BackgroundLaptop.png" alt="a picture of an wooden desktop with an open macbook and a book about javascript">
-            <h2>
-                <span>Hello.<br> my name is bernd "manjou" janzen and i am<br> a web developer from berlin.</span>
-            </h2>
-            <a href="work.html">check out my work !</a>
-        </article>
+                        <a href="work.html" class="hero__link"
+                            >Discover my work !</a
+                        >
+                    </article>
+                </div>
+            </section>
+        </main>
+        <!-- end of main-->
 
-        <!-- <div class="profile">
-            <div class="profile_background"></div>
-            <img src="img/Bernd-janzen-foto-square.svg" class="profile__portrait" alt="A photograph of me">
-            <div class="introduction">
-                <h1>Hello</h1>
-                <p class="profile--text">My name is Bernd "Manjou" Janzen. I am a <span>&#x3C;web&#x3E;</span> developer from Berlin</p>
-                <br>
-                <a href="work.html">Check out some of my code</a>
+        <footer class="page-footer">
+            <div>Find me on</div>
+            <br />
+            <!-- Github Logo -->
+            <div class="social-media">
+                <a href="https://github.com/"
+                    ><img
+                        src="img/github_icon.svg"
+                        alt="github icon"
+                        class="footer-img"
+                /></a>
+                <!-- Linkedin Logo -->
+                <a
+                    href="https://www.linkedin.com/in/bernd-manjou-janzen-870434158/"
+                    ><img
+                        src="img/linkedin_icon.svg"
+                        alt="linkedin icon"
+                        class="footer-img"
+                /></a>
+                <!-- Twitter Logo -->
+                <a href="#"
+                    ><img
+                        src="img/twitter_icon.svg"
+                        alt="twitter icon"
+                        class="footer-img"
+                /></a>
             </div>
-        </div> -->
-    
-    </main><!-- end of main-->
+        </footer>
+        <!-- end of footer -->
 
-
-
-    <footer class="page-footer">
-        <div>Find me on</div><br>
-        <!-- Github Logo -->
-        <div class="social-media">
-            <a href="https://github.com/"><img src="img/github_icon.svg" alt="github icon" class="footer-img"></a>
-            <!-- Linkedin Logo -->
-            <a href="https://www.linkedin.com/in/bernd-manjou-janzen-870434158/"><img src="img/linkedin_icon.svg" alt="linkedin icon" class="footer-img"></a>
-            <!-- Twitter Logo -->
-            <a href="#"><img src="img/twitter_icon.svg" alt="twitter icon" class="footer-img"></a>
-        </div>
-    </footer><!-- end of footer -->
-    
-    <script src="js/tota11y.min.js"></script>
-
-</body>
-
+        <script src="js/tota11y.min.js"></script>
+    </body>
 </html>
