@@ -1,99 +1,739 @@
 <!DOCTYPE html>
 <html lang="en">
-    <link rel="stylesheet" type="text/css" href="css/style.production.css" />
-
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Bernd Manjou Janzen - Web Development Website provides information about work, content and services provided"
+        />
+        <title>Bernd Janzen - Web Development</title>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        />
+        <!-- <link
+            rel="stylesheet"
+            type="text/css"
+            href="css/style.production.css"
+        /> -->
+        <link rel="stylesheet" type="text/css" href="css/style.production.css" />
+    </head>
     <body>
-        <!-- <hr /> -->
-        <header class="page-header">
-            <a href="home" class="header__home">berndjanzen</a>
-            <!-- <img
-                src="img/bernd_manjou_janzen_logo.png"
-                class="page-header__item page-header__img"
-                height="80"
-                alt="Logo in capital lettres Bernd Janzen"
-            /> -->
-            <nav class="main-navigation page-header__item">
-                <ul role="menubar" class="navigation-list">
-                    <li role="presentation">
-                        <a
-                            href="index.html"
-                            role="menuitem"
-                            class="navigation-list__item navigation-list__item--active"
-                            >HOME</a
-                        >
-                    </li>
-                    <li role="presentation">
-                        <a
-                            href="about.html"
-                            role="menuitem"
-                            class="navigation-list__item"
-                            >ABOUT ME</a
-                        >
-                    </li>
-                    <li role="presentation">
-                        <a
-                            href="work.html"
-                            role="menuitem"
-                            class="navigation-list__item"
-                            >PROJECTS</a
-                        >
-                    </li>
-                    <li role="presentation">
-                        <a
-                            href="contact.html"
-                            role="menuitem"
-                            class="navigation-list__item"
-                            >CONTACT</a
-                        >
-                    </li>
-                </ul>
-            </nav>
+        <!-- Header -->
+        <header class="header">
+            <div class="header__content">
+                <a href="/">
+                    <img
+                        src="img/bernd_janzen_logo.svg"
+                        class="logo"
+                        height="80"
+                        alt="Logo from Bernd Manjou Janzen"
+                    />
+                </a>
+
+                <nav class="nav">
+                    <ul role="menubar" class="nav__list">
+                        <li role="presentation" class="nav__item">
+                            <a
+                                href="/"
+                                role="menuitem"
+                                class="nav__link"
+                                >Home</a
+                            >
+                        </li>
+                        <li role="presentation" class="nav__item">
+                            <a
+                                href="#about"
+                                role="menuitem"
+                                class="nav__link"
+                                >About</a
+                            >
+                        </li>
+                        <li role="presentation" class="nav__item">
+                            <a
+                                href="#projects"
+                                role="menuitem"
+                                class="nav__link"
+                                >Projects</a
+                            >
+                        </li>
+                        <li role="presentation" class="nav__item">
+                            <a
+                                href="#contact"
+                                role="menuitem"
+                                class="nav__link"
+                                >Contact</a
+                            >
+                        </li>
+                    </ul>
+                </nav>    
+                <div class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+
+
             <!-- end of nav-->
         </header>
-        <!-- <hr /> -->
-        <main>
-            <section class="hero">
-                <div class="wrapper">
-                    <article id="backgroundimage">
-                        <!-- <img
-                    src="/img/BackgroundLaptop.png"
-                    alt="a picture of an wooden desktop with an open macbook and a book about javascript"
-                    srcset="
-                        /img/BackgroundLaptop.png 348w,
-                        /img/BackgroundLaptop.png 646w,
-                        /img/BackgroundLaptop.png 890w
-                    "
-                    sizes="(max-width: 599.98px) 42vw, (max-width: 646px) 100vw, 890px"
-                /> -->
-                        <h1>
-                            Nice to meet you!<br />
-                            I'm <span>Bernd Manjou Janzen</span>.
-                        </h1>
-                        <br />
-                        <p class="hero__infotext">
-                            Leveraging over a decade of diverse experiences,
-                            from hospitality and woodworking to electronic music
-                            production, I bring a unique blend of creativity and
-                            technical skills to the world of web development.
-                            Let's connect and explore how my varied background
-                            can contribute to your projects.
-                        </p>
+        <!-- end of header -->
 
-                        <a href="work.html" class="hero__link"
-                            >Discover my work !</a
-                        >
-                    </article>
+        <main>
+            <section class="section" id="home">
+                <div class="hero_wrapper">
+                    <div class="hero_infobox">                        
+                        <div class="hero_intro">welcome!</div>
+                        <div class="hero_name">I'm<br>Bernd Janzen</div>
+                        <p class="hero__infotext">
+                            I am a Fullstack Web-Developer from Berlin.<br>
+                        </p>
+                        <a href="#projects" class="hero__link">Discover my work !</a>
+                    </div>
+                    <div class="hero_image_wrapper">
+                        <img src="img/bernd_janzen_image.jpg" alt="photo of Bernd Janzen" class="hero__img" />
+                    </div>
                 </div>
             </section>
+            <!-- end of hero -->
+
+            <br />
+            <hr />
+            <!-- About Section -->
+            <section class="section about">
+                <h2 id="about">About Me</h2>
+                <br />
+                <hr />
+                <br>
+                <br>
+                <!-- <section id="skills"> -->
+                    <div>
+                        <h3>My skills</h3>
+                    </div>
+                    <div class="skills-wrapper">
+                        <div class="skills-container">
+                            <img
+                                src="img/html-icon.svg"
+                                height="90"
+                                alt="the logo for html"
+                                class="skill-img"
+                            />
+                            <img
+                                src="img/css-icon.svg"
+                                height="90"
+                                alt="the logo for css"
+                                class="skill-img"
+                            />
+                            <img
+                                src="img/javascript-icon.svg"
+                                height="90"
+                                alt="the logo for javascript"
+                                class="skill-img"
+                            />
+                            <img
+                                src="img/nodejs-logo-svgrepo-com.svg"
+                                height="90"
+                                alt="the logo for nodejs"
+                                class="skill-img"
+                            />                    
+                            <img
+                                src="img/react-icon.svg"
+                                height="90"
+                                alt="the logo for react"
+                                class="skill-img"
+                            />
+                            <img
+                                src="img/angular_icon.svg"
+                                height="90"
+                                alt="the logo for angular"
+                                class="skill-img"
+                            />
+                            <img
+                                src="img/mongodb.svg"
+                                height="90"
+                                alt="the logo for MongoDB"
+                                class="skill-img"
+                            />
+                            <img
+                                src="img/Bootstrap.svg"
+                                height="90"
+                                alt="the logo for Bootstrap"
+                                class="skill-img"
+                            />
+                            <img
+                                src="img/Visual_Studio.svg"
+                                height="90"
+                                alt="the logo for Visual Studio"
+                                class="skill-img"
+                            />
+                            <img
+                                src="img/Firebase.svg"
+                                height="90"
+                                alt="the logo for Firebase"
+                                class="skill-img"
+                            />
+                            <img
+                                src="img/nodejs-logo-svgrepo-com.svg"
+                                height="90"
+                                alt="the logo for nodejs"
+                                class="skill-img"
+                            />
+                            <img
+                                src="img/github-icon-big.svg"
+                                height="90"
+                                alt="the logo for github"
+                                class="skill-img"
+                            />
+                            <img
+                                src="img/react_native_icon.svg"
+                                height="90"
+                                alt="the logo for react native"
+                                class="skill-img"
+                            />
+                            <img
+                                src="img/angular_icon.svg"
+                                height="90"
+                                alt="the logo for angular"
+                                class="skill-img"
+                            />
+                            <img
+                                src="img/mongodb.svg"
+                                height="90"
+                                alt="the logo for MongoDB"
+                                class="skill-img"
+                            />
+                            <img
+                            src="img/html-icon.svg"
+                            height="90"
+                            alt="the logo for html"
+                            class="skill-img"
+                        />
+                        <img
+                            src="img/css-icon.svg"
+                            height="90"
+                            alt="the logo for css"
+                            class="skill-img"
+                        />
+                        <img
+                            src="img/javascript-icon.svg"
+                            height="90"
+                            alt="the logo for javascript"
+                            class="skill-img"
+                        />
+                        <img
+                            src="img/nodejs-logo-svgrepo-com.svg"
+                            height="90"
+                            alt="the logo for nodejs"
+                            class="skill-img"
+                        />                    
+                        </div>   
+                    </div>
+    
+                    <hr />
+    
+                <br />
+                <div class="aboutme-container">
+                    <p>
+                        "Hello, I'm Bernd Janzen, a seasoned professional with a diverse background and a passion for continuous learning and growth. Over the years, I've journeyed through various fields, from law enforcement to hospitality, IT, dance, entrepreneurship, and more. 
+                        <br>My recent completion of a full-stack web development bootcamp with Career Foundry speaks to my commitment to mastering new skills.
+                        <br>With a degree as data processing merchant from the Chamber of Commerce and Industry in Berlin my journey started in the IT field. 
+                        <br>With experience ranging from teaching Microsoft software, selling hard- and software to debugging HTML and managing digital content, after embarking a creative journey in modern dance theatre and opening my own coffee shop, I've come full circle back to my roots in IT.
+                        <br>My time in the hospitality industry, as well as managing my own coffee shop, has honed my customer-centric approach and business acumen. Meanwhile, my recent stint in a socially oriented café underscores my dedication to inclusivity and community engagement.
+                        <br>Now, I'm excited to transition into a role where I can leverage my diverse background and technical skills as a web developer. 
+                        <br>I'm eager to contribute to a forward-thinking company, bring fresh perspectives, and continue my journey of learning and growth in the dynamic field of web development."
+                    </p>
+
+                </div>
+            </section>
+            <!-- section "aboutme" end -->
+
+            <!-- Work/projects Section -->
+            <section class="section projects" id="projects">
+                    <h2>Projects</h2>
+
+                    <div class="project-list">
+                        <!--  Grid items live here -->
+
+                        <!--  MOVEFLIX MOVIE APP - PROJECT 1 -->
+                        <div class="project-list__item">
+                            <div class="project-image-wrapper">
+                                <div class="projects__name_wrapper">
+                                    <h3 class="projects__name">MoveFlix Movie App</h3>
+                                </div>                               
+                                <img
+                                    class="projects__image"
+                                    srcset="
+                                        img/moveflix-project-large.png  1080w,
+                                        img/moveflix-project-medium.png  680w,
+                                        img/moveflix-project-small.png   340w
+                                    "
+                                    src="img/moveflix-project-small.png"
+                                    alt="screenshot of MoveFlix Movie APP"
+                                />  
+                                <div class="project-techstack">
+                                    <span>HTML</span>
+                                    <span>JavaScript</span>
+                                    <span>REACT</span>
+                                    <span>Bootstrap/CSS</span>
+                                </div>
+                                <div class="projects__links">
+                                    <a
+                                        href="https://moveflix.onrender.com/"
+                                        target="_blank" 
+                                        rel="noreferrer noopener"
+                                        class="project-button"
+                                        >View Project</a
+                                    >
+                                    <a
+                                        href="https://github.com/manjou/moveFlix-client"
+                                        target="_blank" 
+                                        rel="noreferrer noopener"
+                                        class="project-button"
+                                        >View Code</a
+                                    >
+                                </div>
+                            </div>
+  
+                            <div class="project-info-wrapper">                            
+                                <div class="project-info">
+                                    <div class="project-info-text">
+                                        MoveFlix is the React Client side of my movie app that allows users to
+                                        search for movies, view movie details, and
+                                        save their favorite movies. It is based on my own RESTful API (see also Movie API) and has several interface views such as Login, Signup, User-Profile and Movie Details.
+                                        The application uses Parcel as its build tool and is deployed on Render. For styling and responsiveness, I used Bootstrap and CSS.
+                                    </div>
+                    
+                                    <div class="demo-account">
+                                        <h4>Demo Account</h4>
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    Username:
+                                                </td>
+                                                <td>
+                                                    Testuser7
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Password:
+                                                </td>
+                                                <td>
+                                                    Test12345
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <hr>
+                                    <div class="project-note">
+                                        <em>Note: </em>As the Backend and Frontend is hosted on a free server, it might take 20-50 seconds to respond to the first request.
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!--  END OF PROJECT 1 - MOVEFLIX - REACT CLIENT -->
+
+
+                        <!--  MYFLIX MOVIE APP - ANGULAR CLIENT - PROJECT 2 -->
+                        <div class="project-list__item">
+                            <div class="project-image-wrapper">
+                                <div class="projects__name_wrapper">
+                                    <h3 class="projects__name">Angular MyFlix Movie Client</h3>
+                                </div> 
+                                <img
+                                    class="projects__image"
+                                    srcset="
+                                        img/myFlix-angular-large.png  1080w,
+                                        img/myFlix-angular-medium  680w,
+                                    "
+                                    src="img/myFlix-angular-medium.png"
+                                    alt="screenshot of MyFlix Angular Client"
+                                />  
+                                <p class="project-techstack">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript/TypeScript</span>
+                                    <span>Angular</span>
+                                    <span>Angular Material</span>
+                                </p>
+                                <div class="projects__links">
+                                    <a
+                                        href="https://manjou.github.io/myFlix-Angular-client/"
+                                        target="_blank" 
+                                        rel="noreferrer noopener"
+                                        class="project-button"
+                                        >View Project</a
+                                    >
+                                    <a
+                                        href="https://github.com/manjou/myFlix-Angular-client"
+                                        target="_blank" 
+                                        rel="noreferrer noopener"
+                                        class="project-button"
+                                        >View Code</a
+                                    >
+                                </div>
+                            </div> 
+                            <div class="project-info-wrapper">                                                   
+                                <div class="project-info">
+                                    <div class="project-info-text">
+                                        This Angular application provides users with a UI to login, register, view movie information, save their favorite movies and update their user profile. 
+                                        The application is based on a RESTful API (see also Movie API). For styling I used Angular Material and CSS. The application is deployed on GitHub Pages.
+                                    </div>
+                    
+                                    <div class="demo-account">
+                                        <h4>Demo Account</h4>
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    Username:
+                                                </td>
+                                                <td>
+                                                    Testuser15
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Password:
+                                                </td>
+                                                <td>
+                                                    test1234
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <hr>
+                                    <div class="project-note">
+                                        <em>Note: </em>As the Backend is hosted on a free server, it might take 20-50 seconds to respond to the first request.
+                                    </div>
+                                    
+                                </div>
+                            </div>                                         
+                        </div>
+                        <!--  END OF PROJECT 2 - ANGULAR MYFLIX-->
+
+                        <!--  MOVIE API - PROJECT 3 -->
+                        <div class="project-list__item">
+                            <div class="project-image-wrapper">
+                                    <div class="projects__name_wrapper">
+                                        <h3 class="projects__name">Movie API</h3>
+                                    </div>                               
+                                    <img
+                                    class="projects__image"
+                                    src="img/movie-api-medium.png"
+                                    srcset="
+                                        img/movie-api-large.png  1080w,
+                                        img/movie-api-medium.png  680w,
+                                        img/movie-api-small.png   340w
+                                    "
+                                    alt="screenshot of Movie API"
+                                />  
+                                    <div class="project-techstack">
+                                        <span>NodeJS</span>
+                                        <span>Express</span>
+                                        <span>MongoDB</span>
+                                        <span>Passport</span>
+                                    </div>
+                                    <div class="projects__links">
+                                        <a
+                                            href="https://myflix-api-qeb7.onrender.com/documentation"
+                                            target="_blank" 
+                                            rel="noreferrer" 
+                                            rel="noopener"
+                                            class="project-button"
+                                            >View Documentation</a
+                                        >
+                                        <a
+                                            href="https://github.com/manjou/movie_api"
+                                            target="_blank" 
+                                            rel="noreferrer" 
+                                            rel="noopener"
+                                            class="project-button"
+                                            >View Code</a
+                                        >
+                                    </div>
+                                </div>
+    
+                                <div class="project-info-wrapper">                            
+                                <div class="project-info">
+                                    <div class="project-info-text">
+                                        This API is build using Node.js, MongoDB and Mongoose, Express, Passport, JWT, bcrypt and other techonologies to provide a platform for accessing and manipulating movie and user information. The API is used by the MoveFlix and MyFlix clients.
+                                        The API provides endpoints to get all movies, get a single movie, get all users, get a single user, add a user, update a user, delete a user, add a movie, update a movie, delete a movie, add a favorite movie, delete a favorite movie, login and logout.
+                                        For information on how to use the API, please refer to the documentation.
+                                    </div>
+                    
+                                    <div class="demo-account">
+                                        <h4>Demo Account</h4>
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    Username:
+                                                </td>
+                                                <td>
+                                                    
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Password:
+                                                </td>
+                                                <td>
+                                                    
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <hr>
+                                    <div class="project-note">
+                                        <em>Note: </em>The movie API is hosted on a free server, for the first request  to respond it might take 20-50 seconds.
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!--  END OF PROJECT 3 - MOVIE API  -->
+
+
+                        <!--  REACT PWA MEET - PROJECT 4 -->
+                        <div class="project-list__item">
+                            <div class="project-image-wrapper">
+                                <div class="projects__name_wrapper">
+                                    <h3 class="projects__name">REACT PWA MEET</h3>
+                                </div>                               
+                                <img
+                                    class="projects__image"
+                                    src="img/meet-app-medium.png"
+                                    srcset="img/meet-app-small.png 680,
+                                            img/meet-app-medium.png 680, 
+                                            img/meet-app-large.png 1080"
+                                    alt="screenshot of Meet APP"
+                                />  
+                                <div class="project-techstack">
+                                    <span>TDD/BDD</span>
+                                    <span>JAVASCRIPT</span>
+                                    <span>REACT</span>
+                                    <span>AWS Lamda</span>
+                                </div>
+                                <div class="projects__links">
+                                    <a
+                                        href="https://manjou.github.io/meet/"
+                                        target="_blank" 
+                                        rel="noreferrer noopener"
+                                        class="project-button"
+                                        >View Project</a
+                                    >
+                                    <a
+                                        href="https://github.com/manjou/meet"
+                                        target="_blank" 
+                                        rel="noreferrer noopener"
+                                        class="project-button"
+                                        >View Code</a
+                                    >
+                                </div>
+                            </div>
+  
+                            <div class="project-info-wrapper">                            
+                                <div class="project-info">
+                                    <div class="project-info-text">
+                                        This React Progressive Web App (PWA) allows users to search for events in different cities and view event details. 
+                                        <p><b>Features</b></p>
+                                        <ul>
+                                            <li>Users can filter events by city, show/hide event details, and specify the number of events to display.</li>
+                                            <li>The app supports offline usage, allows adding shortcuts to the home screen, and offers visual charts for event details.</li>
+                                            <li>It integrates Google Calendar API for event retrieval and OAuth2 for authentication.</li>
+                                            <li>Serverless functions (AWS Lambda) for authorization server.</li>
+                                            <li>Responsiveness to various screen sizes, and adherence to PWA standards ensure a seamless user experience.</li>
+                                            <li>The App is deployed on GihHub Pages</li>
+                                            <li>The app uses datavisualisation </li>
+                                        </ul>
+                                        
+                                    </div>
+                    
+                                    <div class="demo-account">
+                                        <h4>Login</h4>
+                                        <p>You need to login with a google account.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  END OF PROJECT 4 - MEET - REACT PWA -->
+
+                        <!--  CHAT APP - PROJECT 5 -->
+                        <div class="project-list__item">
+                            <div class="project-image-wrapper">
+                                <div class="projects__name_wrapper">
+                                    <h3 class="projects__name">CHAT App</h3>
+                                </div>                               
+                                <img
+                                    class="projects__image"
+                                    srcset="
+                                        img/chat-app-large.png  1080w,
+                                        img/chat-app-medium.png  680w,
+                                        img/chat-app-small.png   340w
+                                    "
+                                    src="img/chat-app-medium.png"
+                                    alt="screenshot of Chat APP"
+                                />  
+                                <div class="project-techstack">
+                                    <span>REACT-NATIVE</span>
+                                    <span>EXPO</span>
+                                    <span>FIREBASE</span>
+                                    <span>Firestore</span>
+                                    <span>JavaScript</span>
+                                    <span>GiftedChat</span>
+                                </div>
+                                <div class="projects__links">
+                                    <a
+                                        href="#"
+                                        target="_blank" 
+                                        rel="noreferrer noopener"
+                                        class="project-button"
+                                        style="pointer-events: none; color: #ccc; text-decoration: none;"
+                                        >View Project</a
+                                    >
+                                    <a
+                                        href="https://github.com/manjou/ChatApp"
+                                        target="_blank" 
+                                        rel="noreferrer noopener"
+                                        class="project-button"
+                                        >View Code</a
+                                    >
+                                </div>
+                            </div>
+  
+                            <div class="project-info-wrapper">                            
+                                <div class="project-info">
+                                    <div class="project-info-text">
+                                        <p>A chat app for mobile devices using React Native. The app provides users with a chat interface and options to share images and location.
+                                        </p>
+                                        <p><span>Features</span></p>
+                                        <ul class="project__features">
+                                            <li>Users can enter chat rooms to communicate with friends and family, choosing background colors for personalized chat screens.</li>
+                                            <li>Conversations are displayed with an input field for sending messages, supporting additional features like image and location sharing.</li>
+                                            <li>Users can send images from their device's image library or take pictures with the camera app and send them within the chat.</li>
+                                            <li>Messages are stored both online and offline, allowing users to access conversations at any time.</li>
+                                            <li>Chat conversations are stored in Google Firestore Database and authenticated anonymously via Google Firebase.</li>
+                                        </ul>
+                                    </div>
+
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!--  END OF PROJECT 5 - CHAT APP  -->
+ 
+
+ 
+                         <!--  POKEDEX APP - PROJECT 6 -->
+                         <div class="project-list__item">
+                            <div class="project-image-wrapper">
+                                <div class="projects__name_wrapper">
+                                    <h3 class="projects__name">Pokedex App</h3>
+                                </div>    
+                                <img
+                                class="projects__image"
+                                src="img/pokedex-sceen-medium.png"
+                                srcset="img/pokedex-small.png 680w,
+                                        img/pokedex-medium.png 340w, 
+                                        img/pokedex-large.png 1080w"
+                                alt="screenshot of Pokedex APP"
+                            />                            
+                                <div class="project-techstack">
+                                    <span>HTML</span>
+                                    <span>JAVASCRIPT</span>
+                                    <span>BOOTSTRAP/CSS</span>
+                                </div>
+                                <div class="projects__links">
+                                    <a
+                                        href="https://manjou.github.io/pokedex/"
+                                        target="_blank" 
+                                        rel="noreferrer noopener"
+                                        class="project-button"
+                                        >View Project</a
+                                    >
+                                    <a
+                                        href="https://github.com/manjou/pokedex"
+                                        target="_blank" 
+                                        rel="noreferrer noopener"
+                                        class="project-button"
+                                        >View Code</a
+                                    >
+                                </div>
+                            </div>
+  
+                            <div class="project-info-wrapper">                            
+                                <div class="project-info">
+                                    <div class="project-info-text">
+                                        The Pokedex App is created using HTML, CSS, and vanilla JavaScript. The app uses asynchronous programming with the Pokemon API, including fetch and promises. The aim of this project was to learn vanilla JavaScript with the basics of variables, arrays, objects, functions, IFEE and how to integrate a UI component with Bootstrap like a modal and navbar.
+                                        <p><span>Features</span></p>
+                                        <ul class="project__features">
+                                            <li>Users can search for a Pokemon by name.</li>
+                                            <li>Users can view the Pokemon's name and image.</li>
+                                            <li>Users can view additional information about the Pokemon by clicking on the card.</li>
+                                            <li>Users can view the original artwork image of the Pokemon in a modal.</li>
+                                        </ul>
+                                    
+                                    </div>
+                                </div>
+                            </div>
+                        <!--  END OF PROJECT 6 - POKEDEX  -->
+
+                    </div>
+            </section>
+            <!-- End of section work / projects -->
+            <br />
+            <hr />
+            <!-- Contact Section -->
+            <section class="contact">
+                <h2 id="contact">Get in touch</h2>
+                <div class="contact-info">
+                    <h3>Bernd Manjou Janzen</h3>
+                    <br />
+                    <h3>Berlin, Germany</h3>
+                    <br />
+                    <!-- <a href="tel.:+491799117911">Tel: +49.179.9117911</a>
+                    <br> -->
+                    <a href="mailto:manju.janzen(at)googlemail(dot)com"
+                        >Email: manju.janzen@googlemail.com</a
+                    >
+                    <br /><br />
+
+                    <a
+                        href="mailto:manju.janzen(at)googlemail(dot)com"
+                        class="button-contact-me"
+                        target="_blank" 
+                        rel="noreferrer noopener"
+                        >Contact me</a
+                    >
+                    <a
+                        href="https://www.linkedin.com/in/bernd-manjou-janzen-870434158/"
+                        target="_blank" 
+                        rel="noreferrer noopener"
+                        class="button-contact-me"
+                    >LinkedIn</a>
+                </div>
+            </section>
+        </div>
         </main>
         <!-- end of main-->
 
         <footer class="page-footer">
-            <div>Find me on</div>
+            <p>Find me on</p>
             <br />
             <!-- Github Logo -->
             <div class="social-media">
                 <a href="https://github.com/"
+                    target="_blank" 
+                    rel="noreferrer noopener"
                     ><img
                         src="img/github_icon.svg"
                         alt="github icon"
@@ -102,22 +742,23 @@
                 <!-- Linkedin Logo -->
                 <a
                     href="https://www.linkedin.com/in/bernd-manjou-janzen-870434158/"
+                    target="_blank" 
+                    rel="noreferrer noopener"
                     ><img
                         src="img/linkedin_icon.svg"
                         alt="linkedin icon"
                         class="footer-img"
                 /></a>
-                <!-- Twitter Logo -->
-                <a href="#"
-                    ><img
-                        src="img/twitter_icon.svg"
-                        alt="twitter icon"
-                        class="footer-img"
-                /></a>
             </div>
+            <a href="#top">Back to the top</a>
+            <!-- <a class="impressum" href ="impressum.html" target="_blank" rel="noreferrer noopener">
+                Impressum
+            </a> -->
         </footer>
         <!-- end of footer -->
 
         <script src="js/tota11y.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/script.js"></script>
     </body>
 </html>
