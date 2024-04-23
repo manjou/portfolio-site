@@ -25,13 +25,13 @@
             type="text/css"
             href="css/style.production.css"
         /> -->
-        <link rel="stylesheet" type="text/css" href="css/style.production.css" />
+        <link rel="stylesheet" type="text/css" href="css/styles.css" />
     </head>
     <body>
         <!-- Header -->
         <header class="header">
             <div class="header__content">
-                <a href="/">
+                <a href="#">
                     <img
                         src="img/bernd_janzen_logo.svg"
                         class="logo"
@@ -44,9 +44,9 @@
                     <ul role="menubar" class="nav__list">
                         <li role="presentation" class="nav__item">
                             <a
-                                href="/"
+                                href="#"
                                 role="menuitem"
-                                class="nav__link"
+                                class="nav__link active"
                                 >Home</a
                             >
                         </li>
@@ -109,8 +109,8 @@
             <br />
             <hr />
             <!-- About Section -->
-            <section class="section about">
-                <h2 id="about">About Me</h2>
+            <section class="section" id="about">
+                <h2>About Me</h2>
                 <br />
                 <hr />
                 <br>
@@ -255,9 +255,9 @@
                 </div>
             </section>
             <!-- section "aboutme" end -->
-
+            <hr>
             <!-- Work/projects Section -->
-            <section class="section projects" id="projects">
+            <section class="section" id="projects">
                     <h2>Projects</h2>
 
                     <div class="project-list">
@@ -690,11 +690,13 @@
                     </div>
             </section>
             <!-- End of section work / projects -->
+
+            <hr>
             <br />
-            <hr />
+
             <!-- Contact Section -->
-            <section class="contact">
-                <h2 id="contact">Get in touch</h2>
+            <section class="section" id="contact">
+                <h2 class="contact">Get in touch</h2>
                 <div class="contact-info">
                     <h3>Bernd Manjou Janzen</h3>
                     <br />
@@ -750,7 +752,7 @@
                         class="footer-img"
                 /></a>
             </div>
-            <a href="#top">Back to the top</a>
+            <a href="#top" class="top-link">Back to the top</a>
             <!-- <a class="impressum" href ="impressum.html" target="_blank" rel="noreferrer noopener">
                 Impressum
             </a> -->
