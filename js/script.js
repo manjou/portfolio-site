@@ -1,5 +1,4 @@
 // Hamburger Menu
-
 const navEl = document.querySelector('.nav');
 const hamburgerEl = document.querySelector('.hamburger');
 
@@ -12,16 +11,14 @@ navEl.addEventListener('click', () => {
     hamburgerEl.classList.remove('hamburger--open');
 });
 
-
 // Nav link active state on scroll
 const navLinkEls = document.querySelectorAll('.nav__link');
 const sectionEls = document.querySelectorAll('.section');
 
-
+let currentSection = 'home';
 window.addEventListener('scroll', () => {
-    let currentSection = 'home';
     sectionEls.forEach(sectionEl => {
-        if (window.scrollY >= sectionEl.offsetTop - sectionEl.offsetHeight / 2) {
+        if (window.scrollY >= (sectionEl.offsetTop - 100)) {
             currentSection = sectionEl.id;
         }
     });
@@ -30,5 +27,13 @@ window.addEventListener('scroll', () => {
             document.querySelector('.active').classList.remove('active');
             navLinkEl.classList.add('active');
         }
+    });
+});
+
+// Nav link active state on click
+navLinkEls.forEach(navLinkEl => {
+    navLinkEl.addEventListener('click', () => {
+        document.querySelector('.active').classList.remove('active');
+        navLinkEl.classList.add('active');
     });
 });
