@@ -426,6 +426,7 @@ hr {
     width: 80%;
 }
 
+
 .hero__img {
     width: 100%;
     height: auto;
@@ -444,24 +445,27 @@ hr {
     }
 }
 
-/* ABOUT ME SECTION  GRID  */
-.aboutme {
-    margin-bottom: 20px;
-    letter-spacing: 0.2px;
-    line-height: 1.4;
-    font-family: var(--font-text);
-    font-weight: 500;
-    color: var(--primary-color);
-}
+/* ABOUT ME SECTION  */
+
 .aboutme-container {
-    background: var(--background-color-lightgrey);
-    padding: 50px;
-    font-size: 1rem;
-    line-height: 1.8;
-    max-width: 75%;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.6;
     margin: 0 auto;
     margin-top: 40px;
     border-radius: 8px;
+}
+.aboutme-container p {
+    margin-bottom: 10px;
+}
+
+.aboutme-img {
+    float: right;
+    margin: 0 0 0 1.2em;
+    
+}
+.aboutme-img img {
+    width: 100%;
 }
 
 /* end of About me section  */
@@ -1001,5 +1005,15 @@ footer {
     -webkit-transition: all 0.4s;
     -o-transition: all 0.4s;
     transition: all 0.4s;
+}
+.impressum {
+    font-family: var(--font-text);
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    > p {
+        margin-bottom: 10px;
+    }
 }
 /* end of page footer */
