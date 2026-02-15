@@ -12,5 +12,5 @@ You can access it online:
 
 
 <p>Want to reach out to me?</p>
-<a href="mailto:manju.janzen(at)googlemail(dot)com">Email: manju.janzen@googlemail.com</a>
+<a href="mailto:bernd.janzen.dev(at)gmail(dot)com">Email: bernd.janzen.dev@gmail.com</a>
 
